@@ -348,15 +348,10 @@ Run the following command to create an Iceberg resource named `iceberg0`.
 
 ~~~SQL
 CREATE EXTERNAL RESOURCE "iceberg0" 
-
 PROPERTIES ( 
-
 "type" = "iceberg", 
-
 "starrocks.catalog-type"="HIVE", 
-
 "iceberg.catalog.hive.metastore.uris"="thrift://192.168.0.81:9083" 
-
 );
 ~~~
 
@@ -387,8 +382,6 @@ Run the following command to create an Iceberg database named `iceberg_test` in 
 ~~~SQL
 CREATE DATABASE iceberg_test; 
 
-
-
 USE iceberg_test; 
 ~~~
 
@@ -400,21 +393,13 @@ Run the following command to create an Iceberg external table named `iceberg_tbl
 
 ~~~SQL
 CREATE EXTERNAL TABLE `iceberg_tbl` ( 
-
 `id` bigint NULL, 
-
 `data` varchar(200) NULL 
-
 ) ENGINE=ICEBERG 
-
 PROPERTIES ( 
-
 "resource" = "iceberg0", 
-
 "database" = "iceberg", 
-
 "table" = "iceberg_table" 
-
 ); 
 ~~~
 
