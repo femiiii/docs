@@ -321,7 +321,7 @@
     + [Memory Management](/administration/Memory_management.md)
     + [Load Balance](/administration/Load_balance.md)
 + FAQ
-  + [Deploy](/faq/Deploy_faq.md)
+  + [Deployment](/faq/Deploy_faq.md)
   + Data Migration
     + Data Ingestion
       + [Data Ingestion](/faq/loading/Loading_faq.md)

@@ -152,7 +152,7 @@ When you create colocated tables, you need to set the `group` property. Therefor
 
 VARCHAR is a variable-length data type, which has a specified length that can be changed based on the actual data length. Specifying a different varchar length when you create a table has little impact on the query performance on the same data.
 
-## This error "create partititon timeout" occurs when I truncate a table
+## This error "create partition timeout" occurs when I truncate a table
 
 To truncate a table, you need to create the corresponding partitions and then swap them. If there are a larger number of partitions that need to be created, this error occurs. In addition, if there are many data load tasks, the lock will be held for a long time during the compaction process. Therefore, the lock cannot be acquired when you create tables. If there are too many data load tasks, set `tablet_map_shard_size` to `512` in the **be.conf** file to reduce the lock contention.
 
