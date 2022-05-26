@@ -15,7 +15,7 @@ Convert a date and time from one time zone to another.
 CONVERT_TZ(dt, from_tz, to_tz)
 ```
 
-> * The syntax of this function. Enclose the syntax in code blocks.*
+> *The syntax of this function. Enclose the syntax in code blocks.*
 
 ## Parameters
 
@@ -35,8 +35,8 @@ Returns a value of the DATETIME data type.
 
 > - *The data type must be capitalized.*
 > - *Additional notes can be provided if necessary, for example,*
->   - *Types of the return value if the input value supports multiple data types.*
->   - *Type of the error returned (for example, NULL) if the data type of the input value is not supported.*
+> - *Types of the return value if the input value supports multiple data types.*
+> - *Type of the error returned (for example, NULL) if the data type of the input value is not supported.*
 
 ## Usage notes
 
